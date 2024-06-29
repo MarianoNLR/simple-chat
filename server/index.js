@@ -27,7 +27,10 @@ io.on('connection', (socket) => {
   socket.on('chat message', (msg) => {
     try {
         console.log(msg)
-        io.emit('chat message', msg)
+        socket.broadcast.emit("chat message", {
+            msg,
+            from: socket.id,
+          });
     } catch (error) {
         console.error('Error al guardar el mensaje:', error)
     }
