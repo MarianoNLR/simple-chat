@@ -40,3 +40,116 @@
 .read-the-docs {
   color: #888;
 }
+
+.messages-list {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  padding: .5rem;
+}
+
+.message-wrapper {
+  display: flex;
+  color: black;
+}
+
+.my-message {
+  background-color: #daf8cb;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: auto;
+  width: fit-content;
+  max-width: 70%;
+  overflow-wrap: anywhere;
+}
+
+.guest-message {
+  background-color: #f1f0f0;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: auto;
+  text-align: left;
+  width: fit-content;
+  max-width: 70%;
+  overflow-wrap: anywhere;
+}
+
+.container {
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+  min-height: 500px;
+  max-width: 330px;
+}
+
+.front-camera-wrapper {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.front-camera {
+  width: 20px;
+  height: 20px;
+  background-color: #373737;
+  border-radius: 50%;
+}
+
+.screen-wrapper {
+  background-color: aliceblue;
+  padding: 10px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.messages-wrapper {
+  flex: 2;
+  position: relative;
+}
+
+.btn-send {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border: none;
+  border-radius: 10px;
+  padding: 1px 10px;
+}
+
+.form-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+  gap: .2rem;
+}
+
+.form input {
+  flex: 1;
+  background-color: #daf8cb;
+  border: none;
+  padding: .5rem;
+  border-radius: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+}
+
+.form input:focus {
+  outline: none;
+}
+
+.form button {
+  background-color: #daf8cb;
+  cursor: pointer;
+  font-weight: 600;
+  color: black;
+}
