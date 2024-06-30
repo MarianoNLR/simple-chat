@@ -30,7 +30,7 @@ io.on('connection', (socket) => {
         socket.broadcast.emit("chat message", {
             msg,
             from: socket.id,
-          });
+          })
     } catch (error) {
         console.error('Error al guardar el mensaje:', error)
     }
